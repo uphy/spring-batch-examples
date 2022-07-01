@@ -1,4 +1,4 @@
-package com.github.uphy.springbatchexample.helloworld;
+package com.github.uphy.springbatchexample.chunk;
 
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.boot.SpringApplication;
@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableBatchProcessing
-public class Application {
+public class ChunkApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(ChunkApplication.class, args);
     }
 }

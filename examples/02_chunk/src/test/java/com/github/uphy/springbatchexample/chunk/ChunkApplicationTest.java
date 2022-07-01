@@ -1,4 +1,4 @@
-package com.github.uphy.springbatchexample.helloworld;
+package com.github.uphy.springbatchexample.chunk;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -10,9 +10,11 @@ import org.springframework.batch.test.context.SpringBatchTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.github.uphy.springbatchexample.chunk.job.CustomerJobConfiguration;
+
 @SpringBatchTest
-@SpringBootTest(classes = { TestBatchConfig.class, JobConfiguration.class })
-class ApplicationTest {
+@SpringBootTest(classes = { TestBatchConfig.class, CustomerJobConfiguration.class })
+class ChunkApplicationTest {
 
     @Autowired
     JobLauncherTestUtils jobLauncherTestUtils;

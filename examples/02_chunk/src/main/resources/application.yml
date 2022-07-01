@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jobs
+    username: user
+    password: password
+  batch:
+    jdbc:
+      initialize-schema: ALWAYS

@@ -14,6 +14,7 @@
 
   <modules>
     <module>01_hello-world</module>
+    <module>02_chunk</module>
   </modules>
 
 </project>
